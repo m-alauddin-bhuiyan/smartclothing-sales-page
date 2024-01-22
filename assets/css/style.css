@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-a: #B20000;
+    --color-b: #191919;
+    --color-c: #282828;
+    --color-bold-paragraph: #3B3B3B;
+    --color-paragraph: #646464;
+    --color-paragraph-2: #EBEBEB;
+}
+.color-a{
+    color: var(--color-a);
+}
+.color-b{
+    color: var(--color-b);
+}
+.color-bold-paragraph{
+    color: var(--color-bold-paragraph);
+}
+.color-paragraph{
+    color: var(--color-paragraph);
+}
+.color-paragraph-2{
+    color: var(--color-paragraph-2);
+}
+.bg-a{
+    background: var(--color-a);
+}
+.bg-b{
+    background: var(--color-b);
+}
+.bg-c{
+    background: var(--color-c);
+}
+
+.dashed-border{
+    border: 3px dashed #fff;
+}
+.transition-ease-3s{
+    transition: .3s ease;
+}
+.button{
+    color: var(--color-b);
+    padding: 32px 64px;
+    border-radius: 100px;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    background: linear-gradient(88deg, #3DFFFF -10.05%, #FFEB3D 97.19%);
+}
+.button:hover{
+    background: linear-gradient(88deg, #FFEB3D -10.05%, #3DFFFF 97.19%);
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.section-pt-60{
+    padding-top: 60px;
+}
+.section-pb-60{
+    padding-bottom: 60px;
+}
+.section-pt-100{
+    padding-top: 100px;
+}
+.section-pt-120{
+    padding-top: 120px;
+}
+.section-pb-120{
+    padding-bottom: 120px;
+}
+
+.section-title{
+    font-size: 48px;
+}
+
+.px-52{
+    padding: 0px 52px;
+}
+.p-24-60{
+    padding: 24px 60px;
+}
+.p-30-60{
+    padding: 30px 60px;
+}
+.p-40-80{
+    padding: 40px 80px;
+}
+.p-60{
+    padding: 60px;
+}
+.p-40{
+    padding: 40px;
+}
+.align-line-mt-20 {
+    margin-top: -20px;
+}
+.section-mt-60{
+    margin-top: 60px;
+}
+.text-justify{
+    text-align: justify;
+}
+.full-width{
+    width: 100%;
+}
+.fw-semibold-2{
+    font-weight: 500;
+}
+.box-shadow{
+    
+    box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+}
+
+.box{
+    border-radius: 16px;
+    border: 1px solid #DDD;
+    background: #FBFBFB;
+    box-shadow: 9px 10px 41.3px 0px rgba(0, 0, 0, 0.05);
+}
+/* Fonts
+=============================== */
+
+
+/* 
+Header CSS
+======================================== */
+.header{
+    width: 100%;
+    height: 120px;
+    background: url(../img/header-bg.jpg);
+}
+.logo {
+    width: 400px;
+}
+
+/* 
+Banner
+========================================== */
+.banner{
+    width: 100%;
+    background: url(../img/banner-bg.jpg);
+}
+.banner h1{
+    font-size: 84px;
+}
+.banner-product-button{
+    display: inline;
+    width: 1098px;
+    height: 108px;
+}
+
+/* About
+============================================ */
+.about{
+    background: url(../img/about-bg.jpg);
+}
+.about-right-image img{
+    right: -78px;
+    width: 106%;
+}
+
+
+/* Product Animation
+============================================ */
+.section-has-product-image{
+    padding-bottom: 140px;
+}
+
+/* Product Animation
+============================================ */
+.product-anmation{
+    margin-top: -60px;
+}
+.gap-15{
+    gap: 25px;
+}
+
+/* Marquee Animation */
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 284px;
+    overflow-x: hidden;
+}
+  
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+}
+.track img{
+    width: 210px;
+    border: 1px solid var(--color-b);
+}
+.left-animation .track{
+    animation:  marquee-left 140s linear infinite;
+}
+  
+.right-animation .track{
+    animation: marquee-right 130s linear infinite;
+}
+  
+@keyframes marquee-left {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+}
+@keyframes marquee-right {
+    from { transform: translateX(-40%); }
+    to { transform: translateX(-1%); }
+}
+
+/* Adgantage
+============================================ */
+
+.advantage{
+    background: url(../img/advantage-bg.jpg);
+}
+.advantage-right-image img{
+    right: 190px;
+    width: 700px;
+}
+
+/* product-showcase
+============================================ */
+.product-showcase{
+    padding-bottom: 300px;
+}
+.has-custom-bg{
+    background: #f4f4f4;
+}
+.main-product-showcase{
+    position: relative;
+    /* background: #F4F4F4; */
+}
+
+.product-showcase-mt-top{
+    margin-top: -300px;
+}
+section.main-product-showcase::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to left,#191919 50% , #065585 50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.img-pt-60{
+    padding-top: 140px !important;
+}
+.animated_arrow_icon{
+    display: block
+}
+.animated_arrow_icon{
+    /* bottom: 150px; */
+    animation: down-animation 1s linear infinite;
+}
+
+@keyframes down-animation {
+    from{
+        top: 75%;
+        opacity: 0;
+    }
+    to{
+        top: 90%;
+        opacity: 1;
+
+    }
+}
+
+
+/* Reach Out
+============================================ */
+
+.reachout-section{
+    background: url(../img/reachout-bg.jpg);
+
+}
+.bg-image-section{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Review Section
+============================================ */
+.review-animation-area .marquee{
+    height: 205px;
+
+}
+.review-box{
+    width: 504px;
+}
+
+.footer-social-icon:hover{
+    transform: translateY(-15px);
+}
+.responsive-d-show {
+    display: none;
+}
+
+/* ============================================= 
+Responsive CSS
+============================================== */
+
+/* For 1366px Dispaly Laptop 
+================================================*/
+
+@media screen and (max-width: 1399px) {
+    
+    .p-5 {
+        padding: 2rem!important;
+    }
+    .me-5 {
+        margin-right: 2rem!important;
+    }
+    .fs-4 , .fs-3 {
+        font-size: 1.25rem!important;
+    }
+    .section-pt-60{
+        padding-top: 35px;
+    }
+    .section-mt-60{
+        margin-top: 35px;
+    }
+    .section-pb-60{
+        padding-bottom: 35px;
+    }
+    .section-pt-100 {
+        padding-top: 60px;
+    }
+    .button {
+        padding: 20px 44px;
+        font-size: 20px;
+    }
+    .section-pt-120{
+        padding-top: 80px;
+    }
+    .section-pb-120{
+        padding-bottom: 80px;
+    }
+
+    .responsive-d-none{
+        display: none;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .p-30-60 {
+        padding: 20px 50px;
+    }
+    .p-60 {
+        padding: 30px;
+    }
+    .p-40 {
+        padding: 30px;
+    }
+    .p-40-80 {
+        padding: 30px 40px;
+    }
+    .align-line-mt-20 {
+        margin-top: -8px;
+    }
+    .px-3 {
+        padding-right: 0.5rem !important;
+        padding-left: 0.5rem!important;
+    }
+    .header{
+        height: 80px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .banner h1 {
+        font-size: 60px;
+    }
+    .banner-product-button {
+        width: 800px;
+        height: 80px;
+    }
+    .banner-product-button .fs-2{
+        font-size: 1.5rem !important;
+    }
+    .banner-product-button .me-3{
+        margin-right: .5rem !important;
+    }
+    .map-globe-icon{
+        width: 24px;
+    }
+    .banner-arrow-down{
+        width: 60px;
+    }
+
+    /* About Part */
+    .about-right-image img {
+        width: 92%;
+        margin-top: 33px;
+        right: 0;
+    }
+    .website-showcase-image{
+        width: 80%;
+    }
+    
+    .single-product-info img , .advantage .box img,.animated_arrow_icon{
+        width: 50px;
+    }
+    
+    .advantage-right-image img {
+        right: 69px;
+        width: 590px;
+    }
+    
+}
+
+
+/* For Big Tab and Small Lapptop Screen 
+================================================*/
+
+@media screen and (max-width: 1199px) {
+
+    .header{
+        height: 80px;
+    }
+    .logo{
+        width: 220px;
+    }
+   
+    /* About Part */
+    .about-right-image img {
+        width: 113%;
+        margin-top: 103px;
+        right: 0;
+    }
+    
+    .advantage-right-image img {
+        right: 12px;
+        width: 488px;
+    }
+
+}
+
+
+/* For Small Tab Screen 
+================================================*/
+@media screen and (max-width: 991px) {
+    .responsive-md-m-p-0{
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+   
+    .fs-4 , .fs-3 {
+        font-size: 1rem!important;
+    }
+    
+    .banner{
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 0px;
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
+    .banner-product-button {
+        width: 624px;
+        height: 80px;
+        text-align: left;
+    }
+    .banner-product-button .fs-2{
+        font-size: 1.15rem !important;
+    }
+    
+    /* About Part */
+    .about-right-image img {
+        width: 100%;
+        margin-top: 40px;
+        right: 0;
+        position: unset !important;
+    }
+    
+    .advantage-right-image img {
+        right: 12px;
+        width: 488px;
+    }
+    .website-showcase-image{
+        width: 100%;
+    }
+    .px-52{
+        padding: 0px;
+    }
+    
+    .global-reach p.mt-5{
+        margin-top: 2rem !important;
+    }
+    .marquee {
+        height: 210px;
+    }
+    .gap-15 {
+        gap: 15px;
+    }
+    .product-anmation .track img {
+        width: 160px;
+    }
+    .section-has-product-image {
+        padding-bottom: 110px;
+    }
+    .single-product-info{
+        margin: 0px !important;
+    }
+    .advantage-right-image img{
+        display: none;
+    }
+    .product-showcase-mt-top {
+        margin-top: -200px;
+    }
+    section.section-pt-100.section-has-product-image.product-showcase {
+        padding-bottom: 170px;
+    }
+    .single-product-info img, .advantage .box img, .animated_arrow_icon {
+        width: 40px;
+    }
+    .footer-logo{
+        width: 400px;
+    }
+    .responsive-justify-center{
+        justify-content: center !important;
+    }
+    .responsive-text-center{
+        text-align: center !important;
+    }
+    .responsive-mx-0{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .responsive-px-3{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .footer-title{
+        margin-top: 3rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .review-animation-area .marquee {
+        height: 195px;
+    }
+}
+
+
+/* For Learge Mobile Screen 
+================================================*/
+@media screen and (max-width: 767px) {
+    .section-pb-120{
+        padding-bottom: 60px;
+    }
+    .section-pt-120{
+        padding-top: 60px;
+    }
+    .banner h1 {
+        font-size: 36px;
+    }
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 20px !important;
+    }
+    .p-24-60 {
+        padding: 24px 28px;
+    }
+    .p-30-60 {
+        padding: 15px 35px;
+    }
+    .banner-product-button {
+        width: 450px;
+        height: 80px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+    .map-globe-icon{
+        display: none;
+    }
+    .responsive-sm-d-none{
+        display: none;
+    }
+    .banner-product-button .fs-2{
+        font-size: 1.15rem !important;
+    }
+    .button {
+        padding: 16px 30px;
+        font-size: 16px;
+    }
+    /* About Part */
+    
+    .advantage-right-image img {
+        right: 12px;
+        width: 488px;
+    }
+    
+    .marquee {
+        height: 210px;
+    }
+    .gap-15 {
+        gap: 15px;
+    }
+    .product-anmation .track img {
+        width: 160px;
+    }
+    .section-has-product-image {
+        padding-bottom: 110px;
+    }
+    .single-product-info{
+        margin: 0px !important;
+    }
+    .advantage-right-image img{
+        display: none;
+    }
+    .product-showcase-mt-top {
+        margin-top: -200px;
+    }
+    section.section-pt-100.section-has-product-image.product-showcase {
+        padding-bottom: 170px;
+    }
+    .single-product-info img, .advantage .box img, .animated_arrow_icon {
+        width: 40px;
+    }
+    .responsive-pt-0{
+        padding-top: 0 !important;
+    }
+    .responsive-pb-0{
+        padding-bottom: 0 !important;
+    }
+    .p-60.fs-3 {
+        font-size: .75rem!important;
+        padding: 20px;
+    }
+    .align-line-mt-20 {
+        margin-top: 0;
+    }
+    .responsive-has-mb{
+        margin-bottom: 1.5rem!important;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .banner {
+        height: 575px;
+        padding-bottom: 20px;
+    }
+    .banner-product-button{
+        width: 100%;
+    }
+    .responsive-xs-d-none{
+        display: none;
+    }
+    .banner h1 {
+        font-size: 30px;
+    }
+    .responsive-d-show{
+        display: block;
+    }
+    .footer-logo{
+        width: 270px;
+    }
+    .banner-product-button .fs-2 {
+        font-size: 1rem !important;
+    }
+    .p-24-60 {
+        padding: 18px;
+    }
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 20px !important;
+    }
+    .fs-4, .fs-3 ,.footer-bottom .text-center{
+        font-size: .90rem!important;
+    }
+    .box img ,.single-product-info img, .advantage .box img, .animated_arrow_icon{
+        width: 20px;
+        margin-right: 12px !important;
+    }
+    .mb-4 {
+        margin-bottom: 1rem!important;
+    }
+    .global-reach .section-title{
+        font-size: 22px;
+    }
+    .global-reach p.mt-5 {
+        margin-top: 0 !important;
+    }
+    .p-5 {
+        padding: 1rem!important;
+    }
+    .responsive-px-3{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .marquee {
+        height: 125px;
+    }
+    .gap-15 {
+        gap: 5px;
+    }
+    .product-anmation .track img {
+        width: 100px;
+    }
+    .p-40.d-flex.align-items-center.border.border-1 img {
+        width: 30px;
+        margin-right: 10px !important;
+    }
+    .img-pt-60 {
+        padding-top: 45px !important;
+    }
+    .product-showcase-mt-top {
+        margin-top: -85px;
+    }
+    .px-3 {
+        padding-right: 0.2rem !important;
+        padding-left: 0.2rem!important;
+    }
+    section.section-pt-100.section-has-product-image.product-showcase {
+        padding-bottom: 60px;
+    }
+    .review-box{
+        width: 275px;
+        border-radius: 15px !important;
+    }
+    .review-box .color-paragraph-2{
+        font-size: 0.75rem;
+    }
+    .review-animation-area .marquee {
+        height: 187px;
+    }
+    
+    
+}
