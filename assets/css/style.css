@@ -395,6 +395,7 @@ Responsive CSS
     }
     .banner-arrow-down{
         width: 60px;
+        margin: 10px 0px !important
     }
 
     /* About Part */
